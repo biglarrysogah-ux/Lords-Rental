@@ -1,0 +1,1810 @@
+MASTER WEBSITE DEVELOPMENT PROMPT: LORDS RENTAL
+
+1. YOUR ROLE AND OBJECTIVE
+
+Act as a senior full-stack web developer, professional UI/UX designer, automotive website specialist, accessibility engineer, and deployment engineer.
+
+Your task is to build a complete, professional, modern, responsive, visually impressive, and fully functional car rental website for a business called LORDS RENTAL.
+
+The website will initially be generated and developed using Google AI Studio and will subsequently be deployed to Vercel.
+
+This is a real business website, not a demonstration landing page.
+
+Do not produce a basic template, a static mockup, a collection of non-functional buttons, or a design that merely resembles a finished website.
+
+Build the actual website with working navigation, functional forms, properly implemented routes, car listings, car images, WhatsApp booking integration, telephone links, responsive styling, and appropriate deployment configuration.
+
+The final result should feel like a premium car rental company that customers in Accra, Ghana, can confidently use to explore available vehicles and make booking enquiries.
+
+Core business information
+
+Business name: LORDS RENTAL
+
+Primary location: Accra, Ghana.
+
+Primary booking and WhatsApp number: +233 24 784 3535.
+
+Telephone number: +233 24 784 3535.
+
+Primary call to action: BOOK NOW.
+
+Main website slogan:
+
+“rent with trust Drive with Ease”
+
+Display the slogan exactly as written, including the capitalization and wording.
+
+Do not rewrite it as “Rent With Trust, Drive With Ease” or change its wording.
+
+The website must have three primary pages:
+
+1. Homepage.
+2. Car Listing Page.
+3. Booking Page.
+
+These three pages must exist as separate, directly accessible website routes.
+
+However, the homepage must ALSO display the actual content of the other two pages in their proper form.
+
+This requirement is extremely important and must not be overlooked.
+
+⸻
+
+2. TECHNOLOGY AND PROJECT REQUIREMENTS
+
+First, inspect the existing Google AI Studio project and determine which framework, dependencies, and file structure it currently uses.
+
+If a project already exists, preserve its working framework and improve the existing project rather than unnecessarily rebuilding it from scratch.
+
+If starting from scratch, choose a modern, Vercel-compatible implementation.
+
+Preferred options:
+
+* React with TypeScript and Vite, if creating a conventional client-rendered website.
+* Next.js with TypeScript, if a full-stack framework is more appropriate.
+
+Use the simplest architecture that reliably supports all the required features.
+
+Do not mix incompatible framework configurations.
+
+Use:
+
+* TypeScript where appropriate.
+* Reusable React components.
+* Clean, maintainable code.
+* Semantic HTML.
+* Responsive CSS.
+* Accessible forms and navigation.
+* A consistent design system.
+* Proper error handling.
+* Working client-side navigation or framework-native routing.
+* Production-ready asset paths.
+
+Use a lightweight icon library if needed. Do not use random Unicode symbols or emoji as substitutes for professional interface icons.
+
+Avoid unnecessary dependencies.
+
+Do not introduce a database, authentication system, payment gateway, or complicated backend unless it is genuinely needed for a specified feature.
+
+For this initial version, booking enquiries should be sent to WhatsApp. The website does not need to process online payments or confirm vehicle availability automatically.
+
+Do not claim that a booking has been confirmed when the customer has only sent a WhatsApp enquiry.
+
+Required technical quality
+
+The website must:
+
+1. Start successfully in the development environment.
+2. Build successfully for production.
+3. Have no unresolved imports.
+4. Have no missing required components.
+5. Have no broken internal links.
+6. Have no buttons that appear functional but do nothing.
+7. Have no missing car images.
+8. Avoid horizontal scrolling on mobile devices.
+9. Work on current desktop and mobile browsers.
+10. Be structured for deployment to Vercel.
+11. Use relative or correctly configured asset paths so images and other assets do not break after deployment.
+12. Avoid hard-coded local development URLs.
+13. Avoid exposing private API keys or credentials in client-side code.
+14. Avoid adding unnecessary server-side dependencies to a website that can work without them.
+
+Do not claim that the site is production-ready until you have performed the checks available in your environment.
+
+⸻
+
+3. BRAND IDENTITY AND VISUAL DESIGN
+
+Create a premium automotive visual identity for LORDS RENTAL.
+
+The website should feel like a high-end car rental business serving professionals, families, business travellers, visitors, and people who need reliable transportation in Accra.
+
+The design must look polished and professionally art-directed.
+
+Recommended visual direction
+
+Use a luxury automotive aesthetic featuring:
+
+* Deep black.
+* Charcoal grey.
+* White.
+* Metallic silver.
+* Subtle dark green accents.
+* A sophisticated emerald green for important booking buttons.
+
+Use green prominently for the BOOK NOW buttons, following the business requirements.
+
+Do not make the entire website excessively green.
+
+Use dark backgrounds strategically, particularly for the homepage hero and footer.
+
+Use white or light neutral backgrounds for the vehicle listings and booking form to preserve readability.
+
+The visual style should include:
+
+* Large, high-quality automotive photography.
+* Strong typography.
+* Generous spacing.
+* Clean alignment.
+* Sophisticated card layouts.
+* Subtle shadows.
+* Refined borders.
+* Consistent corner radii.
+* Tasteful transitions.
+* Clear visual hierarchy.
+* Professional navigation.
+* Well-designed forms.
+* High-quality mobile layouts.
+
+Avoid a cheap-looking template aesthetic.
+
+Do not use excessive gradients, unnecessary animations, flashing effects, oversized rounded cards everywhere, or excessive decorative elements.
+
+The website should feel trustworthy and premium without becoming difficult to use.
+
+Typography
+
+Use a modern, highly readable sans-serif font.
+
+Choose an appropriate font combination, if necessary, with:
+
+* Strong headings.
+* Readable body text.
+* Clear labels.
+* Consistent font weights.
+* Appropriate line spacing.
+
+Ensure the main slogan is immediately visible when a visitor opens the homepage.
+
+Brand name
+
+Display LORDS RENTAL consistently throughout the website.
+
+Create a simple typographic logo or wordmark if no official logo asset is provided.
+
+Do not invent an official emblem or claim to reproduce an existing logo.
+
+⸻
+
+4. WEBSITE STRUCTURE AND ROUTES
+
+The website must contain these three primary routes:
+
+Homepage:
+/
+
+Car Listing Page:
+/cars
+
+Booking Page:
+/booking
+
+Use these exact paths unless the existing framework requires an equivalent implementation that preserves the same publicly accessible URLs.
+
+All three pages must be functional and independently accessible.
+
+A visitor must be able to open /cars directly without first visiting the homepage.
+
+A visitor must also be able to open /booking directly.
+
+Do not implement these pages as hidden modal windows or as three labels that all display the same content.
+
+They must be separate website pages with their own page layouts and page-specific content.
+
+CRITICAL REQUIREMENT: DISPLAY ALL THREE PAGES ON THE HOMEPAGE
+
+The homepage must contain the actual content of all three main pages.
+
+The homepage must not simply display three cards labelled Home, Cars, and Booking.
+
+It must not represent the other pages exclusively as navigation buttons, links, previews, or teaser sections.
+
+Instead, display the full content of the three pages in their proper order, stacked vertically on the homepage.
+
+The order must be:
+
+1. Homepage hero and introduction.
+2. Full car listing section.
+3. Full booking section.
+4. Customer review section.
+5. Footer.
+
+The car listing section must contain the actual vehicle cards and their information, not just a heading and a link to /cars.
+
+The booking section must contain the actual booking form, not just a button linking to /booking.
+
+The full car listing page must also exist separately at /cars.
+
+The full booking page must also exist separately at /booking.
+
+The homepage must also exist separately at /.
+
+The standalone pages may reuse the same reusable components as the homepage to ensure consistency.
+
+For example:
+
+* The homepage can display the complete car catalogue using the same car-listing component used by /cars.
+* The homepage can display the complete booking form using the same booking-form component used by /booking.
+
+However, the components must be rendered in full wherever required.
+
+Do not create separate copies of the car data that can become inconsistent.
+
+Use a shared source of truth for the vehicle information.
+
+Navigation
+
+Create a clean, professional navigation bar.
+
+Use simple text-based navigation links for:
+
+* Home.
+* Cars.
+* Booking.
+
+These links are for navigation only.
+
+The links must not replace the full-page content required on the homepage.
+
+The navigation may remain fixed or sticky if doing so improves usability, but it must not cover page content.
+
+On mobile devices, use a compact accessible navigation menu.
+
+Ensure the navigation works with keyboard controls and touch interactions.
+
+⸻
+
+5. HOMEPAGE DESIGN AND CONTENT
+
+Build an impressive homepage that immediately communicates the identity of LORDS RENTAL.
+
+Section A: Hero
+
+The hero must occupy a visually prominent area at the top of the page.
+
+Use a high-quality photograph of a luxury Mercedes-Benz car as the background image.
+
+The image should look realistic, premium, elegant, and professionally photographed.
+
+Prefer a wide composition suitable for a website hero.
+
+The vehicle should be clearly recognizable as a Mercedes-Benz, with the background and lighting creating a premium automotive atmosphere.
+
+Use a dark overlay on the background image so the white slogan remains readable.
+
+The overlay must not obscure the vehicle completely.
+
+Use an image that can legally be used on the website.
+
+Prefer an image generated specifically for the website or a properly licensed image.
+
+Do not use a broken external image URL or an image that requires an API key to load.
+
+Store the final image in the project’s appropriate static asset directory whenever possible.
+
+The hero must contain the following slogan exactly:
+
+“rent with trust Drive with Ease”
+
+Display the slogan prominently in a large, elegant font.
+
+Do not change the wording.
+
+Do not add punctuation or change the capitalization of the slogan.
+
+You may place the LORDS RENTAL wordmark above the slogan.
+
+Add a concise supporting sentence such as:
+
+“Premium vehicles. Convenient bookings. A smoother way to move around Accra.”
+
+This supporting sentence is additional content and must not replace or modify the required slogan.
+
+Include a clearly visible BOOK NOW button that takes the visitor to the booking section on the homepage or to /booking.
+
+Include a secondary link that allows visitors to explore the cars.
+
+The hero must be attractive on desktop and mobile.
+
+Ensure the text remains readable at different screen sizes.
+
+Section B: Business introduction
+
+Create a short section introducing LORDS RENTAL.
+
+Explain that visitors can browse the available vehicle listings and send booking enquiries through WhatsApp.
+
+Do not invent a company history, number of years in operation, awards, partnerships, or claims about the size of its fleet.
+
+Do not invent guarantees, insurance arrangements, or specific service promises that have not been provided.
+
+Section C: Complete vehicle catalogue
+
+Render the entire vehicle catalogue directly on the homepage.
+
+Every listing provided in the vehicle data section of this prompt must appear.
+
+Each listing must have:
+
+* A vehicle image.
+* A vehicle name.
+* Its supplied description, if any.
+* Its supplied rental price or price information, if any.
+* Any supplied self-drive or no-self-drive information.
+* A green BOOK NOW button.
+
+Do not replace the complete catalogue with a selection of featured vehicles.
+
+Do not omit listings because they look similar to another listing.
+
+Section D: Complete booking form
+
+Display the complete booking form directly on the homepage beneath the vehicle catalogue.
+
+The form must have the same required fields and WhatsApp functionality as the standalone booking page.
+
+A visitor must be able to submit a booking enquiry without navigating away from the homepage first.
+
+Section E: Customer reviews
+
+Display a professionally designed review section near the bottom of the homepage.
+
+Use the demonstration-review requirements specified later in this prompt.
+
+Section F: Footer
+
+Include:
+
+* LORDS RENTAL wordmark.
+* Quick navigation links.
+* A link to the car listing page.
+* A link to the booking page.
+* A clickable telephone number.
+* A WhatsApp contact link.
+* A copyright notice using the current year dynamically.
+* A short location label: Accra, Ghana.
+
+Do not invent a physical street address.
+
+Do not display social media links unless actual account URLs have been provided.
+
+⸻
+
+6. COMPLETE CAR LISTING PAGE
+
+Create a dedicated car listing page at:
+
+/cars
+
+This page must contain every vehicle listing specified in the vehicle catalogue below.
+
+The page should have a professional introductory header.
+
+Suggested heading:
+
+“Explore Our Cars”
+
+Suggested supporting text:
+
+“Find the vehicle that suits your journey and send us your booking enquiry.”
+
+Use a responsive grid of vehicle cards.
+
+On large screens, use a suitable multi-column grid.
+
+On tablets, reduce the number of columns.
+
+On mobile devices, use a layout that displays the vehicle information clearly without horizontal scrolling.
+
+Individual vehicle cards
+
+Every vehicle listing must have its own card.
+
+Every card must include:
+
+1. A vehicle image.
+2. The supplied vehicle name.
+3. The supplied description or usage restrictions, where provided.
+4. The supplied price information, where provided.
+5. A green BOOK NOW button.
+
+The image should be large enough to identify the vehicle clearly.
+
+Use consistent image proportions across the catalogue.
+
+Use object-fit: cover or an equivalent appropriate image treatment.
+
+The images must not stretch or distort the vehicles.
+
+Every image must have useful alternative text describing the vehicle.
+
+Do not use the same generic sedan image for the entire catalogue.
+
+Generate or source a suitable vehicle image for each listing.
+
+Where the same model appears multiple times, create distinct listing image assets or visually differentiated images of the correct model.
+
+Do not allow an image failure to leave a large blank card.
+
+Implement a local fallback image or another reliable fallback mechanism.
+
+If you generate the images, store the finished files in the project and map each image to the correct listing.
+
+If image generation is unavailable within the development environment, create the complete image mapping and use suitable reliable image assets rather than leaving the cards incomplete.
+
+Do not tell me that images have been generated if the project contains only text placeholders.
+
+BOOK NOW button behaviour
+
+Every vehicle card must contain a green BOOK NOW button beneath the listing.
+
+The button must work.
+
+When a visitor clicks BOOK NOW:
+
+1. Navigate to /booking.
+2. Pass the selected vehicle’s unique listing identifier or another reliable vehicle reference.
+3. Preselect the chosen vehicle in the booking form.
+4. Display the selected vehicle name clearly.
+5. Preserve the selected vehicle when the visitor fills out the remaining form fields.
+6. Allow the visitor to change the selection if necessary.
+
+Use a URL parameter, application state, or another reliable approach to carry the selection.
+
+For example:
+
+/booking?vehicle=vehicle-id
+
+Use URL-safe identifiers rather than relying exclusively on vehicle names.
+
+This matters because several listings use the same model name but have different prices or usage conditions.
+
+The booking form must preserve the identity of the selected listing rather than silently selecting a different listing of the same model.
+
+If a visitor opens /booking directly without selecting a car, allow them to choose a vehicle from a dropdown containing the complete catalogue.
+
+If the vehicle parameter is invalid, display a sensible default prompt and allow the visitor to choose a vehicle.
+
+Do not show a blank or broken booking form.
+
+⸻
+
+7. COMPLETE VEHICLE CATALOGUE
+
+The following catalogue is the source of truth for the website.
+
+Create one separate vehicle-listing record for every numbered item below.
+
+There are 28 listing entries in this specification.
+
+Do not remove repeated models.
+
+Do not combine two listings merely because their vehicle names are identical or similar.
+
+Do not invent missing prices.
+
+Do not change the supplied prices from Ghanaian cedis to US dollars or from US dollars to Ghanaian cedis.
+
+Do not silently change the rental periods.
+
+Where the supplied information is incomplete, display only the information that is known and use a neutral message such as:
+
+“Contact us for pricing and availability.”
+
+For records where a price is supplied but the rental period is not explicitly stated, preserve the supplied amount and do not invent a daily rate.
+
+For records where the description is truncated, preserve the available information and avoid fabricating the missing words.
+
+LISTING 01
+
+Vehicle name:
+HONDA ACCORD AVAILABLE FOR RENT
+
+Price:
+GH₵1,200
+
+Location:
+Within Accra
+
+Use the supplied wording to communicate the location and price.
+
+Do not add a rental period that has not been specified.
+
+LISTING 02
+
+Vehicle name:
+TOYOTA COROLLA 2015 FOR RENT
+
+Price:
+GH₵600
+
+Location:
+Within Accra
+
+LISTING 03
+
+Vehicle name:
+LEXUS RX 350 FOR RENT
+
+Price:
+GH₵1,200
+
+Location:
+Within Accra only
+
+LISTING 04
+
+Vehicle name:
+TOYOTA PRADO FOR RENT
+
+Price:
+$1,500
+
+Location:
+Within Accra
+
+The source does not explicitly state the rental period.
+
+Do not invent one.
+
+LISTING 05
+
+Vehicle name:
+HONDA CRV FOR RENT
+
+Price:
+$1,200
+
+Location:
+Within Accra
+
+The source does not explicitly state the rental period.
+
+Do not invent one.
+
+LISTING 06
+
+Vehicle name:
+TOYOTA PRADO FOR RENT
+
+Price:
+$1,700 a day
+
+Location:
+Within Accra
+
+Preserve this as a separate listing from Listing 04.
+
+LISTING 07
+
+Vehicle name:
+TOYOTA CAMRY FOR RENT
+
+Price:
+$800 a day
+
+Location:
+Within Accra
+
+LISTING 08
+
+Vehicle name:
+HONDA ACCORD AVAILABLE FOR RENT
+
+Price:
+$1,200 a day
+
+Location:
+Within Accra
+
+Keep this separate from the other Honda Accord listings.
+
+LISTING 09
+
+Vehicle name:
+TOYOTA COROLLA AVAILABLE FOR RENT
+
+Price:
+$600
+
+Location:
+Within Accra
+
+The source does not explicitly state the rental period.
+
+Do not invent one.
+
+LISTING 10
+
+Vehicle name:
+MITSUBISHI OUTLANDER FOR RENT
+
+Price:
+$900
+
+Location:
+Within Accra
+
+The source does not explicitly state the rental period.
+
+Do not invent one.
+
+LISTING 11
+
+Vehicle name:
+HYUNDAI PALISADE FOR RENT
+
+Availability or usage information:
+Available for rent.
+
+Important restriction:
+No self-drive.
+
+Clearly display a “No Self-Drive” label.
+
+Do not invent a price.
+
+LISTING 12
+
+Vehicle name:
+TOYOTA COROLLA FOR RENT
+
+Usage information:
+Self drive available.
+
+Clearly display a “Self-Drive Available” label.
+
+Do not invent a price.
+
+LISTING 13
+
+Vehicle name:
+TOYOTA SIENNA AVAILABLE FOR BOOKING
+
+Preserve the vehicle name.
+
+Do not invent a price or rental period.
+
+LISTING 14
+
+Vehicle name:
+MITSUBISHI OUTLANDER
+
+Description:
+Mitsubishi Outlander for rent.
+
+Current supplied price:
+GH₵1,000.00
+
+Other supplied price:
+GH₵1,200.00
+
+The source does not explain the difference between these amounts.
+
+Do not arbitrarily label one price as a sale price, discount, or special offer.
+
+Preserve both supplied amounts and mark the pricing for confirmation if the distinction cannot be established.
+
+LISTING 15
+
+Vehicle name:
+HONDA ACCORD
+
+Description:
+Honda accord available for rent.
+
+Current supplied price:
+GH₵1,000.00
+
+Other supplied price:
+GH₵1,200.00
+
+Do not invent an explanation for the price difference.
+
+Preserve the information and flag the pricing for confirmation if necessary.
+
+LISTING 16
+
+Vehicle name:
+HONDA CRV
+
+Location:
+Within Accra
+
+Supplied price:
+1,200
+
+Display the supplied amount as GH₵1,200 only if the interface clearly identifies the currency as an assumption requiring confirmation.
+
+Otherwise, preserve the amount and flag the currency for confirmation.
+
+Do not silently assume that the source intended a particular currency.
+
+LISTING 17
+
+Vehicle name:
+OUTLANDER AVAILABLE FOR RENT
+
+Description:
+“Accra daily rate is different o…”
+
+The source description is incomplete.
+
+Do not invent the missing wording.
+
+Display the available description without pretending that it is complete.
+
+Current supplied price:
+GH₵1,300.00
+
+Other supplied price:
+GH₵1,500.00
+
+Do not invent an explanation for the difference.
+
+Flag the pricing for confirmation if necessary.
+
+LISTING 18
+
+Vehicle name:
+TOYOTA COROLLA FOR RENT
+
+Supplied price:
+GH₵600.00
+
+Do not invent a rental period.
+
+LISTING 19
+
+Vehicle name:
+L 200 AVAILABLE FOR RENT
+
+Description:
+“Accra daily rate is different fr…”
+
+The source description is incomplete.
+
+Preserve the available text without inventing the missing words.
+
+Supplied price:
+GH₵1,200.00
+
+Do not invent a different rate.
+
+LISTING 20
+
+Vehicle name:
+HONDA ACCORD
+
+Description:
+“Honda Accord available for re…”
+
+The source description is incomplete.
+
+Preserve the supplied information without fabricating the rest.
+
+Supplied price:
+GH₵1,000.00
+
+LISTING 21
+
+Vehicle name:
+TOYOTA RAV4 2024
+
+Usage information:
+Available for rent.
+
+Self-drive available.
+
+Clearly display a “Self-Drive Available” label.
+
+Do not invent a price.
+
+LISTING 22
+
+Vehicle name:
+V8 FOR RENT
+
+Additional supplied vehicle information:
+TOYOTA LAND CRUISER V8…
+
+The description is incomplete.
+
+Use a clear display name such as:
+
+“TOYOTA LAND CRUISER V8”
+
+Preserve the “V8 FOR RENT” information in the listing details if appropriate.
+
+Do not invent the missing description or price.
+
+LISTING 23
+
+Vehicle name:
+HYUNDAI ELANTRA FOR RENT
+
+Description:
+“Hyundai Elantra — smooth dri…”
+
+The description is incomplete.
+
+Preserve the available wording without inventing the rest.
+
+Do not invent a price.
+
+LISTING 24
+
+Vehicle name:
+TOYOTA CAMRY FOR RENT
+
+Usage information:
+Self-drive available.
+
+Clearly display a “Self-Drive Available” label.
+
+Do not invent a price.
+
+LISTING 25
+
+Vehicle name:
+MITSUBISHI OUTLANDER FOR RENT
+
+Usage information:
+Self-drive available.
+
+Clearly display a “Self-Drive Available” label.
+
+Do not invent a price.
+
+LISTING 26
+
+Vehicle name:
+TOYOTA 2025 PRADO FOR RENT
+
+Usage restriction:
+No self-drive.
+
+Clearly display a “No Self-Drive” label.
+
+Do not invent a price.
+
+LISTING 27
+
+Vehicle name:
+TOYOTA COROLLA 2019 FOR RENT
+
+Usage information:
+Self-drive available.
+
+Clearly display a “Self-Drive Available” label.
+
+Do not invent a price.
+
+LISTING 28
+
+Vehicle name:
+MITSUBISHI OUTLANDER FOR RENT
+
+Additional information:
+The supplied listing includes the wording “Accra daily rate is different o…” and two amounts, GH₵1,300.00 and GH₵1,500.00.
+
+IMPORTANT:
+This is the same supplied listing information already represented by Listing 17.
+
+Do not create a second additional card from this final clarification.
+
+Keep Listing 17 as the single listing for this information.
+
+The final catalogue should contain 27 distinct numbered vehicle records if Listing 28 is treated as a clarification of Listing 17, rather than as an independent vehicle.
+
+However, because the source material contains potentially overlapping and repeated records, preserve all clearly separate supplied listings and do not merge unrelated listings without a reason.
+
+If uncertain, keep the listings separate and flag the possible duplication for the business owner to review.
+
+Important catalogue data rule
+
+The business owner must be able to review and correct the catalogue easily.
+
+Store vehicle data in a central array or data file rather than scattering the names, prices, and descriptions throughout different components.
+
+For each vehicle, include fields such as:
+
+* id
+* name
+* image
+* description
+* priceAmount
+* currency
+* priceLabel
+* pricePeriod
+* location
+* selfDrive
+* bookingAvailability
+* pricingNeedsConfirmation
+* sourceNotes
+
+Use appropriate types and nullable values.
+
+For example, pricePeriod may be “day” only when the source explicitly says “a day”.
+
+Do not display “per day” for every vehicle.
+
+Do not display a price of zero when a price is missing.
+
+Do not make up prices for the vehicles without prices.
+
+Do not silently erase conflicting source information.
+
+Before finalizing the catalogue, make sure the number of cards corresponds to the actual number of distinct records in the final data array.
+
+⸻
+
+8. VEHICLE IMAGE REQUIREMENTS
+
+Every displayed vehicle listing must have a suitable car image.
+
+The images are an essential part of this website.
+
+Do not leave image placeholders in the final implementation.
+
+Do not show broken-image icons.
+
+Do not use random images that contradict the listed vehicle model.
+
+Image selection
+
+Use images that match the vehicle model as closely as possible.
+
+Examples:
+
+* Honda Accord listings should display a Honda Accord.
+* Toyota Corolla listings should display a Toyota Corolla.
+* Lexus RX 350 should display a Lexus RX SUV.
+* Toyota Prado listings should display a Toyota Land Cruiser Prado.
+* Toyota Land Cruiser V8 should display an appropriate Land Cruiser V8.
+* Toyota Sienna should display a Toyota Sienna.
+* Mitsubishi Outlander listings should display a Mitsubishi Outlander.
+* Hyundai Palisade should display a Hyundai Palisade.
+* Hyundai Elantra should display a Hyundai Elantra.
+* Toyota RAV4 2024 should display a suitable 2024-generation Toyota RAV4.
+* L 200 should display an appropriate Mitsubishi L200 pickup.
+
+Use separate, suitable images for distinct listings where possible.
+
+The website should not look as though the same car photograph has been copied into every card.
+
+Asset reliability
+
+Prefer locally stored, properly licensed assets.
+
+If images are generated, use final image files and store them in the project’s public assets folder or the framework’s appropriate image directory.
+
+If external image sources are used, ensure the URLs are stable and the images are legally suitable for the website.
+
+Do not depend on temporary preview URLs, local development URLs, or inaccessible private storage.
+
+Ensure image paths are correct after production build and Vercel deployment.
+
+Provide a sensible fallback image if an image fails to load.
+
+Use descriptive alt text.
+
+Use appropriately sized images to prevent unnecessarily large downloads.
+
+If the framework supports image optimization, configure it appropriately.
+
+Do not claim that Vercel will automatically optimize every ordinary HTML image element. Use the framework’s supported optimization features where appropriate.
+
+⸻
+
+9. BOOKING PAGE
+
+Create a dedicated booking page at:
+
+/booking
+
+This page must contain a complete booking enquiry form.
+
+It must also be displayed in full within the homepage.
+
+The page should have a premium, clean design with an easily understandable form.
+
+Suggested heading:
+
+“Book Your Ride”
+
+Suggested supporting text:
+
+“Tell us which vehicle you need and send your booking enquiry directly to our WhatsApp team.”
+
+Do not claim that a vehicle is confirmed until the business has confirmed it.
+
+Required form fields
+
+The following fields are mandatory.
+
+Field 1: Full Name
+
+Label:
+Full Name
+
+Input type:
+Text
+
+Required:
+Yes
+
+Validation:
+
+* Cannot be empty.
+* Trim unnecessary whitespace.
+* Display a helpful error if the field is empty.
+
+Field 2: Phone Number
+
+Label:
+Phone Number
+
+Input type:
+Telephone
+
+Required:
+Yes
+
+Allow Ghanaian telephone numbers and international formats.
+
+Do not reject a valid Ghanaian number simply because it does not follow a single rigid formatting pattern.
+
+Use sensible validation.
+
+Field 3: WhatsApp Number
+
+Label:
+WhatsApp Number
+
+Input type:
+Telephone
+
+Required:
+Yes
+
+Allow Ghanaian and international formats.
+
+Do not automatically assume that the phone number and WhatsApp number are the same.
+
+If useful, include a checkbox:
+
+“My phone number and WhatsApp number are the same.”
+
+When selected, copy the phone number into the WhatsApp field while still allowing the visitor to change it.
+
+Field 4: Vehicle
+
+Label:
+Select Vehicle
+
+Input type:
+Dropdown or accessible searchable selector.
+
+Required:
+Yes
+
+Populate the selector from the central vehicle catalogue.
+
+Include every selectable vehicle listing.
+
+Where two listings have the same vehicle name, distinguish them using an identifier, available price information, or relevant usage details.
+
+For example, if two Toyota Prado listings have different supplied prices, the selection should make the distinction clear.
+
+Do not silently choose the wrong listing.
+
+If a visitor arrived using a vehicle card’s BOOK NOW button, preselect that specific listing.
+
+Field 5: Rental Duration
+
+Label:
+How Long Would You Like to Rent the Car?
+
+Required:
+Yes
+
+Use a suitable selection control with options such as:
+
+* 1 day.
+* 2 days.
+* 3 days.
+* 4 days.
+* 5 days.
+* 6 days.
+* 7 days.
+* More than 7 days.
+
+Also provide an “Other” or custom-duration option.
+
+If the visitor selects a custom duration, display a field where they can enter the number of days or explain the requested period.
+
+Do not invent an actual reservation duration on behalf of the visitor.
+
+Additional useful field
+
+Optionally include:
+
+Additional Message (optional).
+
+This can be used for the customer’s preferred dates, pickup arrangements, questions, or other booking details.
+
+Do not make this field mandatory.
+
+Do not introduce additional mandatory fields beyond the five specified above.
+
+Form layout
+
+The form must be visually polished and easy to use.
+
+Include:
+
+* Clear labels.
+* Visible required-field indicators.
+* Appropriate input spacing.
+* Clear validation messages.
+* Keyboard accessibility.
+* Visible focus states.
+* A responsive layout.
+* A clear submission button.
+* A privacy-conscious explanation of what happens after submission.
+
+Do not use placeholder text as a substitute for proper labels.
+
+The submit button should say:
+
+“Send Booking Enquiry on WhatsApp”
+
+Use a professional green button.
+
+The button must work.
+
+⸻
+
+10. WHATSAPP BOOKING INTEGRATION
+
+The business WhatsApp number is:
+
++233 24 784 3535
+
+For WhatsApp links, use the international number without spaces or punctuation:
+
+233247843535
+
+Use the appropriate WhatsApp click-to-chat URL format.
+
+The website must open WhatsApp with a prefilled booking message containing the customer’s information.
+
+The message must be generated from the actual submitted form data.
+
+Do not hard-code example customer information into the production booking flow.
+
+Required WhatsApp message format
+
+Construct a message similar to the following:
+
+Hello LORDS RENTAL,
+
+I would like to make a car rental booking enquiry.
+
+Full Name: [customer’s full name]
+
+Phone Number: [customer’s phone number]
+
+WhatsApp Number: [customer’s WhatsApp number]
+
+Selected Vehicle: [exact selected vehicle listing]
+
+Rental Duration: [requested rental duration]
+
+Additional Message: [customer’s optional message, if provided]
+
+Please confirm the vehicle’s availability, final rental price, and booking arrangements.
+
+Thank you.
+
+Technical implementation
+
+When the visitor submits the booking form:
+
+1. Validate all required fields.
+2. Prevent submission if required fields are missing.
+3. Display clear validation messages.
+4. Collect the submitted information.
+5. Generate the WhatsApp message from the actual form values.
+6. Encode the message correctly for use in a URL.
+7. Construct the WhatsApp click-to-chat URL.
+8. Open WhatsApp in an appropriate browser tab or application.
+9. Allow the customer to review the prefilled message and send it to the business.
+
+Use the business number 233247843535 in the WhatsApp destination.
+
+Use the supported wa.me click-to-chat URL format.
+
+Do not concatenate unescaped form values directly into the URL.
+
+Encode the message properly so names, spaces, punctuation, and line breaks do not break the link.
+
+Important behaviour
+
+A normal WhatsApp click-to-chat link opens a conversation with a prefilled message; it does not silently send the message automatically.
+
+The customer must complete the final send action in WhatsApp.
+
+Make this clear in the interface with a short note such as:
+
+“WhatsApp will open with your booking details ready to send. Please press Send in WhatsApp to submit your enquiry.”
+
+Do not falsely display “Booking sent successfully” merely because the website opened WhatsApp.
+
+If the browser blocks the new tab or WhatsApp is unavailable, display a helpful alternative with a clickable WhatsApp link.
+
+The visitor must not lose the information they entered simply because of an avoidable interface error.
+
+Do not send customer data to third-party analytics or unrelated external services.
+
+Do not store booking information in local storage, a database, or a remote service unless a separate, explicit requirement is added.
+
+WhatsApp button
+
+Add a WhatsApp contact option on the booking page and in the footer.
+
+Use the same business number.
+
+Make the number configurable from a central business configuration file so it can be changed later without editing multiple components.
+
+⸻
+
+11. TELEPHONE CALL INTEGRATION
+
+Use the same number for telephone calls:
+
++233 24 784 3535
+
+The correct telephone link should use:
+
+tel:+233247843535
+
+Include a clickable telephone number in the footer.
+
+On the booking page, provide a secondary contact option such as:
+
+“Prefer to call? Call LORDS RENTAL.”
+
+Make the call option accessible on mobile devices.
+
+Do not use the WhatsApp URL for telephone calls.
+
+Do not use the telephone URL for WhatsApp conversations.
+
+Keep the two contact methods separate and correctly configured.
+
+⸻
+
+12. CUSTOMER REVIEWS AND TESTIMONIALS
+
+Display a review section near the bottom of every primary page:
+
+* Homepage.
+* Car Listing Page.
+* Booking Page.
+
+Use a consistent review component and visual style across the three pages.
+
+The review design should include:
+
+* Customer name or clearly marked demonstration identity.
+* Review text.
+* Star-rating visuals, if appropriate.
+* A clean, professional layout.
+
+However, this business information has not been supplied with verified customer reviews.
+
+Therefore, do not present invented testimonials as genuine statements from real customers.
+
+For the initial website preview, use clearly identified demonstration reviews with labels such as:
+
+“Sample review — replace with verified customer feedback.”
+
+Use fictional placeholder names only if the review is clearly marked as a demonstration.
+
+Do not claim that a fictional reviewer actually rented a car.
+
+Do not claim that any customer has verified their experience.
+
+Do not fabricate Google reviews, review counts, ratings, customer photographs, or external review badges.
+
+Create the review component so that the business owner can replace the demonstration content with real reviews before launch.
+
+If no real reviews have been provided, keep the demonstration labels visible until genuine review data is supplied.
+
+The section should still look attractive and professionally designed.
+
+⸻
+
+13. SEARCH, FILTERING, AND VEHICLE DISCOVERY
+
+Because the catalogue contains many listings, make it easy for visitors to find a vehicle.
+
+Implement a simple search field on the car listing page.
+
+Visitors should be able to search by vehicle name.
+
+Where practical, provide filters for:
+
+* Vehicle type.
+* Self-drive availability.
+* Price information available.
+* Price currency.
+
+Only implement filters that can be supported accurately by the supplied data.
+
+Do not invent vehicle categories, vehicle specifications, engine sizes, seating capacities, fuel economy, transmission types, or prices.
+
+For vehicle categories, use the vehicle name or an obvious vehicle type only where it can be reasonably established.
+
+If the price is missing, display:
+
+“Contact us for pricing.”
+
+If the price needs confirmation, display a suitable notice rather than treating the price as final.
+
+If a visitor searches for a model that is not listed, display a helpful empty state.
+
+For example:
+
+“No matching vehicles found. Try another search or contact us on WhatsApp.”
+
+Ensure all search and filter controls actually work.
+
+Do not add decorative filters that do nothing.
+
+⸻
+
+14. CURRENCY AND PRICE PRESENTATION
+
+The supplied vehicle catalogue includes both Ghanaian cedis and US dollars.
+
+Preserve the supplied currency for each listing.
+
+Do not convert currencies.
+
+Do not invent exchange rates.
+
+Do not assume that every price is a daily rate.
+
+Only show “per day” when the original listing explicitly says “a day” or the business owner confirms the period.
+
+For listings without a specified rental period, show the amount as supplied and mark the rental period as needing confirmation where appropriate.
+
+For listings with two supplied prices, preserve both amounts and mark the pricing for confirmation if the relationship between the amounts is unclear.
+
+Do not automatically create a fake discount by showing one price crossed out and another in a contrasting colour.
+
+Do not label a price “special offer”, “sale price”, “discounted”, or “limited-time offer” without confirmation.
+
+Where information is incomplete, the interface must be honest and helpful.
+
+The purpose is to display the available information without misleading potential customers.
+
+⸻
+
+15. RESPONSIVE DESIGN
+
+The entire website must work properly on:
+
+* Mobile phones.
+* Tablets.
+* Laptops.
+* Desktop computers.
+
+Mobile design is especially important.
+
+Many visitors may open the website directly from WhatsApp or another mobile application.
+
+Test the interface at common mobile viewport widths.
+
+Ensure:
+
+* No horizontal scrolling.
+* No text cut off at the edges.
+* No buttons that extend beyond the screen.
+* No overlapping navigation.
+* No tiny form controls.
+* No distorted vehicle images.
+* No excessively tall or unreadable cards.
+* No booking form fields that are difficult to complete.
+* No content hidden behind a sticky header.
+* No footer content overflowing the viewport.
+
+Use appropriate responsive breakpoints.
+
+On mobile, make the BOOK NOW buttons easy to tap.
+
+Maintain adequate spacing between interactive elements.
+
+Make sure the WhatsApp booking process is comfortable on mobile.
+
+⸻
+
+16. ACCESSIBILITY
+
+Implement good accessibility practices.
+
+Use semantic HTML elements.
+
+Use appropriate heading hierarchy.
+
+Associate every form label with its input.
+
+Ensure keyboard navigation works.
+
+Provide visible focus indicators.
+
+Use accessible colour contrast.
+
+Provide meaningful image alternative text.
+
+Use descriptive link text.
+
+Make validation errors easy to understand.
+
+Do not communicate essential information through colour alone.
+
+Use appropriate ARIA attributes only when needed.
+
+Do not introduce accessibility attributes that conflict with native browser behaviour.
+
+Ensure that the navigation menu and form can be operated without a mouse.
+
+⸻
+
+17. SEO AND WEBSITE METADATA
+
+Configure the website for basic search engine visibility.
+
+Use a suitable page title for each route.
+
+Suggested site title:
+
+LORDS RENTAL | Car Rental in Accra, Ghana
+
+Create an appropriate description explaining that visitors can browse rental vehicle listings and send booking enquiries through WhatsApp.
+
+Use a clear heading hierarchy.
+
+Provide a favicon or simple brand icon.
+
+Add suitable social-sharing metadata.
+
+Use appropriate image alt text.
+
+Ensure each route has meaningful page metadata where the framework supports it.
+
+Do not invent a physical address, business registration number, business opening hours, customer rating, or official social media account.
+
+Do not add false structured data claiming that fabricated reviews are genuine.
+
+⸻
+
+18. PERFORMANCE AND RELIABILITY
+
+Make the website fast and stable.
+
+Use appropriately sized images.
+
+Avoid loading huge images when smaller versions are sufficient.
+
+Use lazy loading for vehicle images that are below the initial viewport.
+
+Prioritize the homepage hero image appropriately.
+
+Avoid unnecessary JavaScript.
+
+Avoid duplicate component implementations.
+
+Avoid unnecessary animation libraries.
+
+Prevent layout shifts where practical by specifying image dimensions or aspect ratios.
+
+Handle image-loading errors gracefully.
+
+Ensure the main content remains usable if an optional visual effect fails.
+
+Do not require a third-party service for the basic website to render.
+
+The car listings, booking form, and core navigation should work without relying on an external database.
+
+⸻
+
+19. VERCEL DEPLOYMENT REQUIREMENTS
+
+The final project will be deployed to Vercel.
+
+Use the official Vercel documentation when determining deployment configuration.
+
+Official documentation:
+
+Vercel framework documentation:
+https://vercel.com/docs/frameworks
+
+Vercel builds:
+https://vercel.com/docs/builds
+
+Vercel project configuration:
+https://vercel.com/docs/project-configuration/vercel-json
+
+Vercel Vite documentation:
+https://vercel.com/docs/frameworks/frontend/vite
+
+Vercel Next.js documentation:
+https://vercel.com/docs/frameworks/full-stack/nextjs
+
+Vercel deployment from the CLI:
+https://vercel.com/docs/projects/deploy-from-cli
+
+Framework-specific configuration
+
+Inspect the actual framework before generating deployment configuration.
+
+If the project uses Vite and React, ensure that:
+
+* package.json contains the necessary scripts.
+* The correct build command is available.
+* The build produces the expected output directory.
+* All production dependencies are declared.
+* The application builds successfully.
+* All public asset paths work.
+* Direct navigation to /cars and /booking works after deployment.
+
+For a conventional Vite single-page application using client-side routing, add an appropriate Vercel rewrite configuration if required.
+
+For example, a Vite single-page application may use a root-level vercel.json configuration containing:
+
+{
+“$schema”: “https://openapi.vercel.sh/vercel.json”,
+“rewrites”: [
+{
+“source”: “/(.*)”,
+“destination”: “/index.html”
+}
+]
+}
+
+This configuration is an example for a conventional SPA, not a universal configuration for every framework.
+
+Do not blindly add this rewrite to a Next.js application or another framework with its own routing behaviour.
+
+If the project uses Next.js, preserve the framework’s native routing and use the appropriate Vercel integration.
+
+Do not create conflicting route rewrites.
+
+Do not overwrite an existing working vercel.json file without checking its contents first.
+
+Do not create unnecessary API routes or serverless functions for features that can work through a simple client-side WhatsApp link.
+
+Required project files
+
+Inspect the project and ensure that it contains the necessary files for the chosen framework.
+
+These may include:
+
+* package.json.
+* The relevant application entry files.
+* The relevant routing configuration.
+* The required styling files.
+* The public asset directory.
+* The required build configuration.
+* vercel.json, when appropriate.
+* README.md with development and deployment instructions.
+
+Do not create unnecessary files merely to increase the file count.
+
+Production build
+
+Run the appropriate production build command if the environment permits it.
+
+Resolve any build errors that you can reproduce.
+
+Check for:
+
+* Missing dependencies.
+* Missing imports.
+* TypeScript errors.
+* Incorrect asset paths.
+* Invalid route configuration.
+* Missing environment variables.
+* Incorrect build output settings.
+* Console errors that prevent the application from working.
+
+Do not report a successful production build unless the build has actually completed successfully.
+
+If the environment does not permit a build or deployment test, explicitly state what could not be verified.
+
+⸻
+
+20. FINAL WEBSITE AUDIT
+
+Before declaring the website complete, perform a comprehensive audit.
+
+Page checks
+
+Confirm that:
+
+* The homepage route works.
+* The car listing route works.
+* The booking route works.
+* The homepage displays the full car catalogue.
+* The homepage displays the full booking form.
+* The standalone car listing page displays the full catalogue.
+* The standalone booking page displays the complete booking form.
+* Navigation links work.
+* Direct navigation to each route works in the supported development environment.
+
+Catalogue checks
+
+Confirm that:
+
+* Every intended vehicle record is present.
+* Repeated vehicle models have not been accidentally merged.
+* Every card has the correct vehicle name.
+* Every card has the correct supplied price information.
+* Missing prices are not invented.
+* Missing rental periods are not invented.
+* Self-drive labels are correct.
+* No-self-drive labels are correct.
+* All vehicle images correspond to their listings.
+* Images do not appear broken.
+* The BOOK NOW button appears on every vehicle card.
+* Each button passes the correct vehicle selection to the booking form.
+
+Booking checks
+
+Confirm that:
+
+* Full Name is required.
+* Phone Number is required.
+* WhatsApp Number is required.
+* Vehicle selection is required.
+* Rental Duration is required.
+* Additional Message is optional.
+* The vehicle dropdown contains the complete catalogue.
+* A vehicle selected from a listing remains selected in the form.
+* Invalid submissions show useful validation errors.
+* The WhatsApp message contains the correct form values.
+* The message is URL-encoded correctly.
+* The WhatsApp destination uses 233247843535.
+* The telephone link uses tel:+233247843535.
+* The user is informed that they must press Send in WhatsApp.
+* No false booking-confirmation message is shown.
+
+Review checks
+
+Confirm that:
+
+* A review section appears near the bottom of all three pages.
+* Any fictional demonstration reviews are clearly labelled as samples.
+* No fictional reviews are presented as genuine customer testimonials.
+* No false review counts or third-party rating claims appear.
+
+Responsive checks
+
+Inspect the design at mobile, tablet, and desktop sizes.
+
+Check for:
+
+* Overflow.
+* Broken layouts.
+* Unreadable text.
+* Misaligned cards.
+* Missing buttons.
+* Overlapping elements.
+* Distorted images.
+* Form usability problems.
+
+Vercel checks
+
+Confirm that:
+
+* The project uses the correct framework configuration.
+* The build command is appropriate.
+* The output directory is correct.
+* The routing strategy is appropriate.
+* The asset paths will work in production.
+* The WhatsApp link is valid.
+* The telephone link is valid.
+* No secret keys are exposed.
+* No unnecessary external services are required.
+* The necessary deployment files are included.
+
+If actual deployment testing is unavailable, do not claim that the website has been deployed or verified on Vercel.
+
+⸻
+
+21. FINAL DELIVERABLES
+
+Complete the actual website implementation.
+
+Do not stop after describing how the website should look.
+
+Deliver:
+
+1. The complete working website.
+2. The homepage.
+3. The separate car listing page.
+4. The separate booking page.
+5. The complete vehicle catalogue.
+6. The vehicle image assets or a verified, reliable asset mapping.
+7. The functional booking form.
+8. The WhatsApp click-to-chat integration.
+9. The telephone integration.
+10. The review sections with clearly labelled demonstration content.
+11. Responsive styling.
+12. Correct routing.
+13. The appropriate Vercel deployment configuration.
+14. A README file explaining how to run and deploy the project.
+15. A summary of the actual tests performed.
+16. A list of any unresolved issues or business details that still need confirmation.
+
+If you are working inside an environment that can modify project files, modify the actual files rather than merely providing code snippets in your response.
+
+If you cannot create or verify a required asset, disclose that limitation rather than pretending the asset exists.
+
+Do not leave TODO comments for essential functionality.
+
+Do not use fake API responses to simulate successful bookings.
+
+Do not leave dead buttons or incomplete forms.
+
+Do not invent business details.
+
+Do not silently change the supplied vehicle prices.
+
+Do not silently omit vehicle listings.
+
+Do not claim that a deployment succeeded unless it has actually succeeded.
+
+FINAL INSTRUCTION
+
+Build LORDS RENTAL as a complete, premium, professional, mobile-friendly car rental website.
+
+The homepage must display the complete car listing section and complete booking section in their actual forms.
+
+The car listing page and booking page must also exist as separate working routes.
+
+Every vehicle listing must have an appropriate image and a working green BOOK NOW button.
+
+The booking form must construct a correctly encoded WhatsApp message addressed to +233 24 784 3535.
+
+The same number must support telephone calls.
+
+The project must be configured appropriately for deployment to Vercel.
+
+Prioritize functional correctness, visual quality, reliable images, accurate vehicle information, and a deployment configuration that matches the actual framework.
+
+Begin by inspecting the existing project, then implement the website, and finally perform the available checks before reporting the result.

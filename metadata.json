@@ -1,0 +1,8 @@
+{
+  "name": "LORDS RENTAL | Car Rental in Accra, Ghana",
+  "description": "Premium car rental in Accra, Ghana. Browse available luxury sedans, SUVs, and pickups, and send instant booking enquiries via WhatsApp or call +233 24 784 3535.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
